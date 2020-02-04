@@ -26,7 +26,7 @@ section {
     height: 120px;
     border-radius: 20px;
     background-color: #579c87;
-    line-height: 110px;
+    line-height: 70px;
 }
 /* Le footer visible fixe */
 
@@ -128,7 +128,31 @@ footer {
     font-size: 3em;
     text-align: center;
 }
-/* Le bouton Prochainement avec animation des "..." */
+/* Les animations CSS */
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out; 
+}
+
+.loader__dot{
+    font-size: 2em;
+}
+@keyframes blink {80% { color: transparent }}
+.loader__dot { animation: 1.5s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
+  
+.rubrique:hover{ 
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;   
+  }
+  @keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+}
+/* Le bouton Prochainement */
 
 .prochainement {
     color: #fdcb46;
@@ -183,4 +207,84 @@ hr {
     border: 2px solid #579c87;
     width: 100%;
     margin: 0px;
+}
+
+/* lanoteenchantee.html */
+
+.lanote {
+    background-color: #fcdfdb;
+    height: 1684px;
+    width: 1190px;
+    box-shadow: 0px 0px 10px rgb(197, 196, 196);
+    border: none;
+    margin-top: 100px;
+}
+
+.lanote .fas {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+    background: linear-gradient(to right, #f15861 0%, #f78f6a 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lanote .titre{
+    font-weight: lighter;
+    font-family: 'Devonshire', cursive;
+    color: #3c1218;
+    font-size: 3em;
+    text-align: center;
+}
+.lanote .soustitre{
+    padding-left: 120px;
+    padding-right: 100px;
+    display: inline;
+    font-family: 'Paprika', cursive;
+    color: #3c1218;
+    font-size: 2em;    
+}
+.lanote .soustitre1{
+    padding-left: 60px;
+    display: inline;
+    font-family: 'Paprika', cursive;
+    color: #3c1218;
+    font-size: 2em;  
+}
+.lanote .soustitre2{
+    padding-left: 25px;
+    display: inline;
+    font-family: 'Paprika', cursive;
+    color: #3c1218;
+    font-size: 2em;  
+}
+#trait1{
+    width: 27%;
+    float: left;
+    padding-left: 90px;
+}
+#trait2{
+    width: 27%;
+    float: right;
+    padding-right: 90px;
+}
+.lanote p{
+    display: left;
+    padding-left: 90px;
+    line-height: 50px;
+    font-weight: lighter;
+    font-family: 'Paprika', cursive;
+    color: #3c1218;
+    font-size: 1.5em;
+}
+.prix{
+    float: right;
+    font-weight: bold;
+    padding-right: 90px;
+}
+.lanote .titre2{
+    font-weight: lighter;
+    font-family: 'Devonshire', cursive;
+    color: #3c1218;
+    font-size: 3em;
+    text-align: center;
 }
