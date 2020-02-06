@@ -31,14 +31,12 @@ section {
 /* Le footer visible fixe */
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: inline;
     position: fixed;
     margin-top: 84px;
     height: 135px;
     bottom: 0px;
-    width: 100%;
+    width:100%;
     background-color: #579c87;
     line-height: 130px;
 }
@@ -129,10 +127,11 @@ footer {
     text-align: center;
 }
 /* Les animations CSS */
-
+.button1, .button2, .button3, .button4 {
+    transition: transform .4s ease
+}
 .button1:hover, .button2:hover, .button3:hover, .button4:hover{
     transform: scale(1.1);
-    transition: .5s ease-in-out; 
 }
 
 .loader__dot{
@@ -144,7 +143,7 @@ footer {
 .loader__dot:nth-child(3) { animation-delay: 500ms }
   
 .rubrique:hover{ 
-    animation: wiggle 75ms infinite;
+    animation: wiggle 100ms infinite;
     animation-timing-function: linear;   
   }
   @keyframes wiggle {
@@ -164,7 +163,8 @@ footer {
 }
 /* Les Rubriques */
 .rubrique1 {
-    margin-right: 650px;
+    float: left;
+    margin-left: 50px;
     color: #fdcb46;
     font-family:'Kanit', sans-serif;
     font-size: 3em;
@@ -172,6 +172,8 @@ footer {
     cursor: pointer; 
 }
 .rubrique2 {
+    margin-right: 50px;
+    float: right;
     color: #fdcb46;
     font-family:'Kanit', sans-serif;
     font-size: 3em;
@@ -211,13 +213,20 @@ hr {
 
 /* lanoteenchantee.html */
 
+.intro{
+    margin-top: 90px;
+    color: #353535;
+    font-family:'Kanit', sans-serif;
+    font-size: 3em;
+    font-weight: bold; 
+}
 .lanote {
     background-color: #fcdfdb;
     height: 1684px;
     width: 1190px;
     box-shadow: 0px 0px 10px rgb(197, 196, 196);
     border: none;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .lanote .fas {
