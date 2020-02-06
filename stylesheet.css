@@ -151,6 +151,7 @@ footer {
     50% { transform: translate(-2px, 0); }
     100% { transform: translate(2px, 0); }
 }
+
 /* Le bouton Prochainement */
 
 .prochainement {
@@ -221,6 +222,7 @@ hr {
     font-weight: bold; 
 }
 .lanote {
+    text-align: center;
     background-color: #fcdfdb;
     height: 1684px;
     width: 1190px;
@@ -245,26 +247,46 @@ hr {
     text-align: center;
 }
 .lanote .soustitre{
-    padding-left: 120px;
-    padding-right: 100px;
+
     display: inline;
     font-family: 'Paprika', cursive;
     color: #3c1218;
-    font-size: 2em;    
+    font-size: 2em;   
+    cursor: pointer;
+    border:none;
+    background:linear-gradient(to top, #f6916a 0%,#f6916a 3px, transparent 6px) no-repeat;
+    background-size:0 100%;
+    border-radius: 5px;
+    transition: background-size .5s ease-in-out; 
 }
 .lanote .soustitre1{
-    padding-left: 60px;
+
     display: inline;
     font-family: 'Paprika', cursive;
     color: #3c1218;
     font-size: 2em;  
+    cursor: pointer;
+    border:none;
+    background:linear-gradient(to top, #f6916a 0%,#f6916a 3px, transparent 5px) no-repeat;
+    background-size:0 100%;
+    border-radius: 5px;
+    transition: background-size .5s ease-in-out;
 }
 .lanote .soustitre2{
-    padding-left: 25px;
+    
     display: inline;
     font-family: 'Paprika', cursive;
     color: #3c1218;
-    font-size: 2em;  
+    font-size: 2em;
+    cursor: pointer;
+    border:none;
+    background:linear-gradient(to top, #f6916a 0%,#f6916a 3px, transparent 5px) no-repeat;
+    background-size:0 100%;
+    border-radius: 5px;
+    transition: background-size .5s ease-in-out;  
+}
+.soustitre:hover,.soustitre1:hover,.soustitre2:hover{
+    background-size: 100% 100% ;
 }
 #trait1{
     width: 27%;
@@ -277,6 +299,7 @@ hr {
     padding-right: 90px;
 }
 .lanote p{
+    text-align: initial;
     display: left;
     padding-left: 90px;
     line-height: 50px;
@@ -296,4 +319,108 @@ hr {
     color: #3c1218;
     font-size: 3em;
     text-align: center;
+}
+/* lechicalafrancaise.html */
+
+.lechic {
+    text-align: center;
+    background-color: #fff5fe;
+    height: 1684px;
+    width: 1190px;
+    box-shadow: 0px 0px 10px rgb(197, 196, 196);
+    border: none;
+    margin-top: 30px;
+}
+.lechic .titre{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Redressed', cursive;
+    background: linear-gradient(to right, #e38913 0%, #8f5bfe 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5em;
+}
+.lechic .soustitre{
+    display: inline;
+    font-family: 'Cantata One', serif;
+    font-weight: lighter;
+    color: #e38913;
+    font-size: 2em;   
+    cursor: pointer;
+    border:none;
+    background:linear-gradient(to top, #e38913 0%,#e38913 3px, transparent 6px) no-repeat;
+    background-size:0 100%;
+    border-radius: 5px;
+    transition: background-size .5s ease-in-out; 
+}
+.lechic .soustitre1{
+    display: inline;
+    font-family: 'Cantata One', serif;
+    font-weight: lighter;
+    color: #a56799;
+    font-size: 2em;  
+    cursor: pointer;
+    border:none;
+    background:linear-gradient(to top, #a56799 0%,#a56799 3px, transparent 5px) no-repeat;
+    background-size:0 100%;
+    border-radius: 5px;
+    transition: background-size .5s ease-in-out;
+}
+.lechic .soustitre2{
+    
+    display: inline;
+    font-family: 'Cantata One', serif;
+    font-weight: lighter;
+    color: #6e4ccc;
+    font-size: 2em;
+    cursor: pointer;
+    border:none;
+    background:linear-gradient(to top, #6e4ccc 0%,#6e4ccc 3px, transparent 5px) no-repeat;
+    background-size:0 100%;
+    border-radius: 5px;
+    transition: background-size .5s ease-in-out;  
+}
+.soustitre:hover,.soustitre1:hover,.soustitre2:hover{
+    background-size: 100% 100% ;
+}
+#trait21{
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+}
+#trait22{
+    width: 30%;
+    float: right;
+    padding-right: 10px;
+}
+.lechic .p1{
+    text-align: initial;
+    display: left;
+    padding-left: 110px;
+    line-height: 70px;
+    font-family: 'Cantata One', serif;
+    color: #e38913;
+    font-size: 2em;
+}
+.lechic .p2{
+    text-align: initial;
+    display: left;
+    padding-left: 110px;
+    line-height: 70px;
+    font-family: 'Cantata One', serif;
+    color: #a56799;
+    font-size: 2em;
+}
+.lechic .p3{
+    text-align: initial;
+    display: left;
+    padding-left: 110px;
+    line-height: 70px;
+    font-family: 'Cantata One', serif;
+    color: #6e4ccc;
+    font-size: 2em;
+}
+.lechi .prix{
+    float: right;
+    padding-right: 110px;
 }
