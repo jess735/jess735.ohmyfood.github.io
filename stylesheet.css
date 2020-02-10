@@ -1,64 +1,67 @@
 body {
     margin: 0px;
-    height: 2400px;    
+    height: 2100px;    
 }
 header {
     display: flex;
     background-color: #579c87;
-    height: 240px;
+    height: 200px;
 }
 h1 {
     font-family:'Kanit', sans-serif;
     font-size: 5.5em;
     font-weight:bold;
     color: #fdcb46;
-    margin-left: 550px;
+    margin: auto;
 }
-main {  
+main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 section {
-    margin-left: 426px;
-    margin-top: 87px;
-    width: 650px;
-    height: 120px;
+    margin: auto;
+    margin-top: 5%;
+    width: 450px;
+    height: 100px;
     border-radius: 20px;
     background-color: #579c87;
-    line-height: 70px;
+    line-height: 60px;
 }
 /* Le footer visible fixe */
 
 footer {
     display: inline;
     position: fixed;
-    margin-top: 84px;
-    height: 135px;
-    bottom: 0px;
+    margin-top: 50px;
+    height: 100px;
+    bottom: 0%;
     width:100%;
     background-color: #579c87;
-    line-height: 130px;
+    line-height: 100px;
 }
 /* Les liens des menus du site */
-.button1, .button2, .button3, .button4 {
-    height: 759px;
-    width: 540px;
-    box-shadow: 0px 0px 10px rgb(197, 196, 196);
+
+.button1, .button2, .button3, .button4{
+   
+    height: 650px;
+    width: 550px;
     border: none;
     cursor: pointer; 
-    margin-top: 100px;
     text-decoration: none;
 }
-.button1, .button3{
-    margin-left: 120px;
+.cadre{
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px rgb(197, 196, 196);
+    height: 650px;
+    width: 550px;
+    overflow: hidden;
+    display: flex;
 }
-.button2, .button4 {
-    margin-right: 120px;
-}
+
 /* Les différentes Polices des liens "Menu" */
 .button1 p{
-    padding-top: 200px;
+    padding-top: 25%;
     font-family: 'Devonshire', cursive;
 }
 .button1 span {
@@ -71,7 +74,7 @@ footer {
 	-webkit-text-fill-color: transparent;
 }
 .button2 p{
-    padding-top: 200px;
+    padding-top:40%;
     color: #c77412;
     font-family: 'Cantata One', serif;
 }
@@ -82,7 +85,7 @@ footer {
 	-webkit-text-fill-color: transparent;
 }
 .button3 p {
-    padding-top: 200px;
+    padding-top: 40%;
     color: #1789f9;
     font-family: 'Kalam', cursive;
 }
@@ -93,7 +96,7 @@ footer {
 	-webkit-text-fill-color: transparent;
 }
 .button4 p{
-    padding-top: 200px;
+    padding-top: 40%;
     color: #72bf56;
     font-family: 'Kalam', cursive;
 }
@@ -103,15 +106,17 @@ footer {
 	-webkit-text-fill-color: transparent;
 }
 .button1{
+
     background-color: #fcdfdb;
     color: #3c1218;
     font-size: 3em;
     text-align: center;
 }
 .button2 {
+
     background-color: #fff5fe;
     color: #3c1218;
-    font-size: 3.5em;
+    font-size: 3em;
     text-align: center;
 }
 .button3 {
@@ -121,6 +126,7 @@ footer {
     text-align: center;
 }
 .button4 {
+
     background-color: #fdfffd;
     color: #3c1218;
     font-size: 3em;
@@ -128,10 +134,13 @@ footer {
 }
 /* Les animations CSS */
 .button1, .button2, .button3, .button4 {
-    transition: transform .4s ease
+  
+    transition: transform .4s ease;
 }
 .button1:hover, .button2:hover, .button3:hover, .button4:hover{
-    transform: scale(1.1);
+    transform: scale(1.15); 
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 .loader__dot{
@@ -157,7 +166,7 @@ footer {
 .prochainement {
     color: #fdcb46;
     font-family:'Kanit', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     text-decoration: none;
     cursor: pointer; 
@@ -168,7 +177,7 @@ footer {
     margin-left: 50px;
     color: #fdcb46;
     font-family:'Kanit', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     text-decoration: none;
     cursor: pointer; 
 }
@@ -177,7 +186,7 @@ footer {
     float: right;
     color: #fdcb46;
     font-family:'Kanit', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     text-decoration: none;
     cursor: pointer; 
 }
@@ -423,4 +432,46 @@ hr {
 .lechi .prix{
     float: right;
     padding-right: 110px;
+
+    
+    /*4.RESPONSIVE DESIGN
+----------------------------------------------------*/
+
+/* Tablettes */
+@media screen and (max-width: 991px) {
+    
+    .conteneur{
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size:3.4em;
+        margin-top:100px;
+    }
+    section{
+        padding:20px;
+    }
+    article ul:nth-child(2){
+        margin-right:0;
+    }
+    address{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px) {
+     {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 0px rgba(199,199,199,1);
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius:7px;
+    }
+    header {
+       
+    }
+    h1 {
+      
+    }  
+   
 }
