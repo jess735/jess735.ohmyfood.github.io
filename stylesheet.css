@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    height: 2100px;    
+    height: auto;    
 }
 header {
     display: flex;
@@ -193,15 +193,15 @@ footer {
     font-family:'Kanit', sans-serif;
     font-size: 2.5em;
     text-align: center;
-    margin-left: 20px;
+    margin: auto;
 }
 .texte {
     color: black;
     font-family:'Kanit', sans-serif;
     font-size: 1em;
     text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .texte h4 {
     color: rgb(75, 73, 73);
@@ -434,9 +434,13 @@ hr {
     /* RESPONSIVE DESIGN */
 
 
-
+@media screen and (min-width: 2000px){
+    
+}
 /* Tablettes */
-@media screen and (max-width: 991px) {
+
+
+@media only screen and (max-width: 991px) {
   
     h1{
         font-size:2em;
@@ -457,7 +461,7 @@ hr {
 
 }
 /* Smartphones */
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
 
     h1{
         font-size:2em;
@@ -488,5 +492,20 @@ hr {
         margin: auto;
         margin-top: 5%;
     }  
-
+/*mentionslegales.html*/
+.texte h3 {
+    font-size: 1.5em;
+    margin: auto
+}
+.texte {
+    font-size: 0.7em;
+}
+.texte h4 {
+    font-size: 1em;
+}
+hr {
+    border: 2px solid #579c87;
+    width: 100%;
+    margin: 0px;
+}
 }
