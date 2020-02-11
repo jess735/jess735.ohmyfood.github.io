@@ -434,9 +434,47 @@ hr {
     /* RESPONSIVE DESIGN */
 
 
-/* Smartphone */
+
+/* Tablettes */
+@media screen and (max-width: 991px) {
+  
+    h1{
+        font-size:2em;
+    }
+    .button1, .button2, .button3, .button4{
+        height: 350px;
+        width: 250px;
+        font-size: 1em;
+    }
+    .cadre{
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px rgb(197, 196, 196);
+        height: 350px;
+        width: 250px;
+        overflow: hidden;
+        display: flex;
+    }
+
+}
+/* Smartphones */
 @media screen and (max-width: 425px) {
 
+    h1{
+        font-size:2em;
+    }
+    .button1, .button2, .button3, .button4{
+        height: 350px;
+        width: 250px;
+        font-size: 1em;
+    }
+    .cadre{
+        margin-top: 5%;
+        box-shadow: 0px 0px 10px rgb(197, 196, 196);
+        height: 350px;
+        width: 250px;
+        overflow: hidden;
+        display: flex;
+    }
     header {
         display: flex;
         background-color: #579c87;
@@ -450,6 +488,5 @@ hr {
         margin: auto;
         margin-top: 5%;
     }  
-
 
 }
