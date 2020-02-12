@@ -135,6 +135,7 @@ footer {
 }
 .button1:hover, .button2:hover, .button3:hover, .button4:hover{
     transform: scale(1.15); 
+    opacity: 0.7;
     -moz-transform: scale(1.15);
     -webkit-transform: scale(1.15);
 }
