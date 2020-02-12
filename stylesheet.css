@@ -44,7 +44,6 @@ footer {
 /* Les liens des menus du site */
 
 .button1, .button2, .button3, .button4{
-   
     height: 650px;
     width: 550px;
     border: none;
@@ -132,7 +131,6 @@ footer {
 }
 /* Les animations CSS */
 .button1, .button2, .button3, .button4 {
-  
     transition: transform .4s ease;
 }
 .button1:hover, .button2:hover, .button3:hover, .button4:hover{
@@ -140,7 +138,6 @@ footer {
     -moz-transform: scale(1.15);
     -webkit-transform: scale(1.15);
 }
-
 .loader__dot{
     font-size: 2em;
 }
@@ -220,7 +217,6 @@ hr {
 }
 
 /* lanoteenchantee.html */
-
 .intro{
     margin-top: 90px;
     color: #353535;
@@ -237,7 +233,6 @@ hr {
     border: none;
     margin-top: 30px;
 }
-
 .lanote .fas {
     text-align: center;
     padding-top: 50px;
@@ -254,7 +249,6 @@ hr {
     text-align: center;
 }
 .lanote .soustitre{
-
     display: inline;
     font-family: 'Paprika', cursive;
     color: #3c1218;
@@ -266,8 +260,7 @@ hr {
     border-radius: 5px;
     transition: background-size .5s ease-in-out; 
 }
-.lanote .soustitre1{
-
+.lanote .soustitre1{ 
     display: inline;
     font-family: 'Paprika', cursive;
     color: #3c1218;
@@ -280,7 +273,6 @@ hr {
     transition: background-size .5s ease-in-out;
 }
 .lanote .soustitre2{
-    
     display: inline;
     font-family: 'Paprika', cursive;
     color: #3c1218;
@@ -319,6 +311,9 @@ hr {
     float: right;
     font-weight: bold;
     padding-right: 90px;
+}
+.prix::after{
+    content: "€";
 }
 .lanote .titre2{
     font-weight: lighter;
@@ -374,7 +369,6 @@ hr {
     transition: background-size .5s ease-in-out;
 }
 .lechic .soustitre2{
-    
     display: inline;
     font-family: 'Cantata One', serif;
     font-weight: lighter;
@@ -447,15 +441,15 @@ hr {
         font-size:2em;
     }
     .button1, .button2, .button3, .button4{
-        height: 300px;
-        width: 250px;
-        font-size: 1em;
+        height: 400px;
+        width: 350px;
+        font-size: 1.5em;
     }
     .cadre{
         margin-top: 5%;
         box-shadow: 0px 0px 10px rgb(197, 196, 196);
-        height: 300px;
-        width: 250px;
+        height: 400px;
+        width: 350px;
         overflow: hidden;
         display: flex;
     }
@@ -501,7 +495,7 @@ hr {
 }
 .lanote {
     margin: auto;
-    height: 730px;
+    height: 720px;
     width: 550px;
     margin-top: 30px;
     margin-bottom: 70px;
@@ -531,7 +525,32 @@ hr {
 }
 #trait1,#trait2{
     width: 23%;
+}
+/* lechicalafrancaise.html */
 
+.lechic {
+    margin: auto;
+    height: 720px;
+    width: 550px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.lechic .titre{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 1.8em;
+}
+.lechic .soustitre,.lechic .soustitre1,.lechic .soustitre2{
+    font-size: 0.9em;   
+    background: none;
+}
+.lechic .p1,.lechic .p2,.lechic .p3{
+    line-height: 30px;
+    font-size: 0.7em;
+}
+#trait21,#trait22{
+    width: 25%;
+}
 }
 /* Smartphones */
 @media only screen and (max-width: 425px) {
@@ -539,15 +558,17 @@ hr {
         font-size:2em;
     }
     .button1, .button2, .button3, .button4{
-        height: 300px;
-        width: 250px;
+        margin: auto;
+        height: 250px;
+        width: 200px;
         font-size: 1em;
     }
     .cadre{
+        margin: auto;
         margin-top: 5%;
         box-shadow: 0px 0px 10px rgb(197, 196, 196);
-        height: 300px;
-        width: 250px;
+        height: 250px;
+        width: 200px;
         overflow: hidden;
         display: flex;
     }
@@ -584,7 +605,7 @@ hr {
     font-size: 1em; 
 }
 .lanote {
-    height: 450px;
+    height: 420px;
     width: 300px;
 }
 .lanote .fas {
@@ -593,14 +614,8 @@ hr {
 .lanote .titre{
     font-size: 1.2em;
 }
-.lanote .soustitre{
+.lanote .soustitre,.lanote .soustitre1, .lanote .soustitre2{
     font-size: 0.5em;   
-}
-.lanote .soustitre1{
-    font-size: 0.5em; 
-}
-.lanote .soustitre2{
-    font-size: 0.5em; 
 }
 .lanote p{
     line-height: 12px;
@@ -623,4 +638,28 @@ hr {
     width: 20%;
     padding-right: 30px;
 }
+/* lechicalafrancaise.html */
+
+.lechic {
+    height: 420px;
+    width: 300px;
+}
+.lechic .titre{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.2em;
+}
+.lechic .soustitre,.lechic .soustitre1,.lechic .soustitre2{
+    font-size: 0.5em;  
+    background: none;
+}
+.lechic .p1,.lechic .p2,.lechic .p3{
+    padding-left: 30px;
+    line-height: 15px;
+    font-size: 0.4em;
+}
+#trait21,#trait22{
+    width: 20%;
+}
+
 }
