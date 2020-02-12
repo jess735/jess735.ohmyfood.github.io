@@ -475,10 +475,66 @@ hr {
     .rubrique1, .rubrique2{
         font-size: 1em;
     }
+    /*mentionslegales.html*/
+.texte h3 {
+    font-size: 1.5em;
+    margin: auto
+}
+.texte {
+    font-size: 0.8em;
+}
+.texte h4 {
+    font-size: 1.2em;
+}
+hr {
+    border: 2px solid #579c87;
+    width: 100%;
+    margin: 0px;
+}
+/* lanoteenchantee.html */
+
+.intro{
+    margin:auto;
+    margin-top: 20px;
+    font-size: 1.5em; 
+    text-align: center;
+}
+.lanote {
+    margin: auto;
+    height: 730px;
+    width: 550px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.lanote .fas {
+    padding-top: 2%;
+    font-size: 1em;
+}
+.lanote .titre{
+    font-size: 1.8em;
+}
+.lanote .soustitre{
+    font-size: 0.8em;   
+}
+.lanote .soustitre1{
+    font-size: 0.8em; 
+}
+.lanote .soustitre2{
+    font-size: 0.8em; 
+}
+.lanote p{
+    line-height: 20px;
+    font-size: 0.5em;
+}
+.lanote .titre2{
+    font-size: 2em;
+}
+#trait1,#trait2{
+    width: 23%;
+
 }
 /* Smartphones */
 @media only screen and (max-width: 425px) {
-
     h1{
         font-size:2em;
     }
@@ -504,8 +560,6 @@ hr {
         display: flex;
         flex-direction: column
     }
-    
-
 /*mentionslegales.html*/
 .texte h3 {
     font-size: 1.5em;
@@ -521,5 +575,52 @@ hr {
     border: 2px solid #579c87;
     width: 100%;
     margin: 0px;
+}
+/* lanoteenchantee.html */
+
+.intro{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em; 
+}
+.lanote {
+    height: 450px;
+    width: 300px;
+}
+.lanote .fas {
+    font-size: 0.9em;
+}
+.lanote .titre{
+    font-size: 1.2em;
+}
+.lanote .soustitre{
+    font-size: 0.5em;   
+}
+.lanote .soustitre1{
+    font-size: 0.5em; 
+}
+.lanote .soustitre2{
+    font-size: 0.5em; 
+}
+.lanote p{
+    line-height: 12px;
+    font-size: 0.3em;
+    padding-left: 30px;
+}
+.prix{
+    float: right;
+    font-weight: bold;
+    padding-right: 30px;
+}
+.lanote .titre2{
+    font-size: 1em;
+}
+#trait1{
+    width: 20%;
+    padding-left: 30px;
+}
+#trait2{
+    width: 20%;
+    padding-right: 30px;
 }
 }
