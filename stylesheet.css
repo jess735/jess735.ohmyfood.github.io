@@ -22,6 +22,7 @@ main{
 section {
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 10%;
     width: 450px;
     height: 100px;
     border-radius: 20px;
@@ -33,12 +34,12 @@ section {
 footer {
     display: inline;
     position: fixed;
-    margin-top: 50px;
-    height: 100px;
+    margin-top: auto;
+    height: 7%;
     bottom: 0%;
     width:100%;
     background-color: #579c87;
-    line-height: 100px;
+    line-height: 50px;
 }
 /* Les liens des menus du site */
 
@@ -61,7 +62,7 @@ footer {
 
 /* Les différentes Polices des liens "Menu" */
 .button1 p{
-    padding-top: 25%;
+    padding-top: 30%;
     font-family: 'Devonshire', cursive;
 }
 .button1 span {
@@ -429,36 +430,51 @@ hr {
 .lechi .prix{
     float: right;
     padding-right: 110px;
-
+}
     
     /* RESPONSIVE DESIGN */
 
-
-@media screen and (min-width: 2000px){
-    
-}
 /* Tablettes */
 
 
 @media only screen and (max-width: 991px) {
-  
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
     h1{
         font-size:2em;
     }
     .button1, .button2, .button3, .button4{
-        height: 350px;
+        height: 300px;
         width: 250px;
         font-size: 1em;
     }
     .cadre{
         margin-top: 5%;
         box-shadow: 0px 0px 10px rgb(197, 196, 196);
-        height: 350px;
+        height: 300px;
         width: 250px;
         overflow: hidden;
         display: flex;
     }
-
+    .prochainement{
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 90px;
+    }
+    section {
+        width: 200px;
+        height:50px ;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 90px;
+        line-height: 40px;
+    } 
+    .rubrique1, .rubrique2{
+        font-size: 1em;
+    }
 }
 /* Smartphones */
 @media only screen and (max-width: 425px) {
@@ -467,14 +483,14 @@ hr {
         font-size:2em;
     }
     .button1, .button2, .button3, .button4{
-        height: 350px;
+        height: 300px;
         width: 250px;
         font-size: 1em;
     }
     .cadre{
         margin-top: 5%;
         box-shadow: 0px 0px 10px rgb(197, 196, 196);
-        height: 350px;
+        height: 300px;
         width: 250px;
         overflow: hidden;
         display: flex;
@@ -488,10 +504,8 @@ hr {
         display: flex;
         flex-direction: column
     }
-    section {
-        margin: auto;
-        margin-top: 5%;
-    }  
+    
+
 /*mentionslegales.html*/
 .texte h3 {
     font-size: 1.5em;
