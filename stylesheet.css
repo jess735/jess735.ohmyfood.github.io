@@ -337,7 +337,7 @@ hr {
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: 'Redressed', cursive;
-    background: linear-gradient(to right, #e38913 0%, #8f5bfe 100%);
+    background: linear-gradient(to right, #e38a12 0%,#be747a 50%, #8f5aff 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3.5em;
@@ -811,10 +811,12 @@ hr {
 }
 #trait1{
     width: 20%;
+    padding-top: 5px;
     padding-left: 30px;
 }
 #trait2{
     width: 20%;
+    padding-top: 5px;
     padding-right: 30px;
 }
 /* lechicalafrancaise.html */
@@ -839,6 +841,7 @@ hr {
 }
 #trait21,#trait22{
     width: 20%;
+    padding-top: 6px;
 }
 /* ledelicedespapilles.html */
 
@@ -862,6 +865,7 @@ hr {
 }
 #trait31,#trait32{
     width: 20%;
+    padding-top: 6px;
 }
 .ledelice .prix{
     padding-right: 30px;
