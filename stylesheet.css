@@ -5,7 +5,7 @@ body {
 header {
     display: flex;
     background-color: #579c87;
-    height: 10%;
+    height: 150px;
 }
 h1 {
     font-family:'Kanit', sans-serif;
@@ -559,8 +559,11 @@ hr {
         justify-content: space-around;
     }
     h1{
-        font-size:2em;
+        font-size:2.5em;
     }
+    header {
+        height: 100px;   
+    }    
     .button1, .button2, .button3, .button4{
         height: 400px;
         width: 350px;
@@ -736,6 +739,9 @@ hr {
     h1{
         font-size:2em;
     }
+    header {
+        height: 50px;   
+    }    
     .button1, .button2, .button3, .button4{
         margin: auto;
         height: 250px;
