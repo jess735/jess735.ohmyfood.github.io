@@ -42,7 +42,6 @@ footer {
     line-height: 50px;
 }
 /* Les liens des menus du site */
-
 .button1, .button2, .button3, .button4{
     height: 650px;
     width: 550px;
@@ -545,7 +544,6 @@ hr {
 
 /* Tablettes */
 
-
 @media only screen and (max-width: 991px) {
     main{
         display: flex;
@@ -632,7 +630,7 @@ hr {
     font-size: 0.8em; 
 }
 .lanote .soustitre2{
-    font-size: 0.8em; 
+    font-size: 0.7em; 
 }
 .lanote p{
     line-height: 20px;
