@@ -6,12 +6,19 @@ header {
     display: flex;
     background-color: #579c87;
     height: 150px;
+    text-align: center;
 }
 h1 {
     font-family:'Kanit', sans-serif;
     font-size: 5.5em;
     font-weight:bold;
     color: #fdcb46;
+    margin: auto;
+}
+.logotitre {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
     margin: auto;
 }
 main{
