@@ -163,15 +163,16 @@ footer {
     100% { transform: translate(2px, 0); }
 }
 
-/* Le bouton Prochainement */
+/* La section Prochainement */
 
-.prochainement {
+.loader {
     color: #fdcb46;
     font-family:'Kanit', sans-serif;
-    font-size: 3em;
+    font-weight: lighter;
+    font-size: 2.5em;
     text-align: center;
     text-decoration: none;
-    cursor: pointer; 
+    line-height: 70px;
 }
 /* Les Rubriques */
 .rubrique1 {
@@ -576,10 +577,11 @@ hr {
         overflow: hidden;
         display: flex;
     }
-    .prochainement{
-        font-size: 1em;
-        font-weight: bold;
+    .loader{
+        font-size: 1.2em;
+     
         margin-bottom: 90px;
+        line-height: 30px;
     }
     section {
         width: 200px;
@@ -803,7 +805,8 @@ hr {
 }
 .lanote p{
     line-height: 12px;
-    font-size: 0.3em;
+    font-size: 0.4em;
+    font-weight: lighter;
     padding-left: 30px;
 }
 .prix{
@@ -842,7 +845,7 @@ hr {
 .lechic .p1,.lechic .p2,.lechic .p3{
     padding-left: 30px;
     line-height: 15px;
-    font-size: 0.4em;
+    font-size: 0.5em;
 }
 #trait21,#trait22{
     width: 20%;
@@ -866,7 +869,7 @@ hr {
 .ledelice p{
     padding-left: 30px;
     line-height: 15px;
-    font-size: 0.4em;
+    font-size: 0.45em;
 }
 #trait31,#trait32{
     width: 20%;
@@ -893,7 +896,7 @@ hr {
 .lapalette p{
     padding-left: 30px;
     line-height: 15px;
-    font-size: 0.4em;
+    font-size: 0.45em;
 }
 #trait41{
     width: 25%;
