@@ -579,7 +579,6 @@ hr {
     }
     .loader{
         font-size: 1.2em;
-     
         margin-bottom: 90px;
         line-height: 30px;
     }
@@ -845,7 +844,7 @@ hr {
 .lechic .p1,.lechic .p2,.lechic .p3{
     padding-left: 30px;
     line-height: 15px;
-    font-size: 0.45em;
+    font-size: 0.40em;
 }
 #trait21,#trait22{
     width: 20%;
